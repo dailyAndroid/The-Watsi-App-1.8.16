@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#64B5F6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Name"
+            android:id="@+id/name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:textStyle="bold|italic"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Partner Name"
+            android:id="@+id/partner_name"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:typeface="monospace"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/target_amount"
+            android:layout_alignStart="@+id/target_amount" />
+
+        <ImageView
+            android:layout_width="315dp"
+            android:layout_height="270dp"
+            android:id="@+id/imageView"
+            android:foregroundGravity="center_vertical"
+            android:background="#64B5F6"
+            android:padding="10dp"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Header"
+            android:id="@+id/header"
+            android:padding="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|italic"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Amount Rasied"
+            android:id="@+id/amount_raised"
+            android:layout_below="@+id/header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Target Amount"
+            android:id="@+id/target_amount"
+            android:layout_alignTop="@+id/amount_raised"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
